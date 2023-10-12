@@ -73,7 +73,7 @@ footer{
     color:#000000;
     margin-bottom: 5px;
     position: relative;
-    transition: 0.3s ease;
+    
 }
 .col .links a::before{
     content:'';
@@ -82,17 +82,10 @@ footer{
     position: absolute;
     top:5px;
     left:-10px;
-    background-color: #5a224f;
-    transition: 0.5s ease;
     opacity: 0;
 }
-.col .links a:hover::before{
-    opacity: 1;
-}
-.col .links a:hover{
-    transform: translateX(-8px);
-    color:#5a224f;
-}
+
+
 .col .contact-details{
     display: inline-flex;
     justify-content: space-between;
