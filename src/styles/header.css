@@ -1,3 +1,44 @@
 body{
-    background-color: #f1f1f1;
+    background-color: #c6e7ee;
+   
+  
+} 
+header{
+    background-color: #c6e7ee;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    text-align: center;
+    background-color: #c6e7ee;
+    padding: 15px;
+    box-shadow: 0 0 3px #000;
+}
+.img2{
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  left: 45%;
+  top: 45px;
+}
+header li{
+    display: inline;
+    padding-left: 45px;
+}
+header li a{
+    color: #333;
+    text-decoration: none;
+    padding: 13px;
+}
+header ul #contact a{
+    color: #fff;
+    background-color: royalblue;
+    border-radius: 30px;
+    float: right;
+    position: relative;
+    top: -38px;
+}
+header li img{
+    width: 125px;
+    float: left;
+    margin-top: -40px;
 }
