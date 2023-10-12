@@ -1,5 +1,5 @@
 body{
-    
+    background-color: #c6e7ee;
    padding: 0;
    margin: 0;
    height: 100vh;
@@ -18,7 +18,7 @@ body{
 .slider{
     width: 1200px;
     height: 600px;
-    border-radius: 20px;
+    border-radius: 10px;
     overflow: hidden;
     display: flex;
 }
