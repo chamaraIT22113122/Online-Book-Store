@@ -6,7 +6,8 @@
 }
 
 footer{
-    margin-top: auto;
+    margin-top: 100%;
+    margin-bottom: -100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
