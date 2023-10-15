@@ -58,7 +58,6 @@ img{
 
 
 .product-info{
-    background: white;
     padding: 2rem;
 }
 .product-info-top{
@@ -90,7 +89,6 @@ img{
 }
 .off-info .sm-title{
     background: var(--carribean-green);
-    color: white;
     display: inline-block;
     padding: 0.5rem;
     position: absolute;
@@ -127,7 +125,7 @@ img{
 
 .product-col-content{
     text-align: center;
-    color: white;
+    
 }
 .product-collection .text-light{
     opacity: 1;

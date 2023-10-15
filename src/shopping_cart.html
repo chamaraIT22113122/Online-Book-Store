@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+      src="https://kit.fontawesome.com/8f27d68390.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/shopping_cart.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <title></title>
+  </head>
+  <body>
+    <header>
+        
+        <div class="hero">
+            <nav>
+               <!--logo_txt-->
+               <a href="home.html"><img class="logo" src="img/logo2.png" alt="logo"></a>
+           <ul class="nav_links">
+               <li><a href="home.html">Home</a></li>
+               <li><a href="publication.html">Publication</a></li>
+               <li><a href="register.html">Ragister</a></li>
+               <li><a href="contact_us.html">Contact Us</a></li>
+               <li><a href="about_us.html ">About us</a></li>
+           </ul><br>
+            <!--user image-->
+            <img class="user_pic" src="img/pp.jpg" onclick="toggleMenu()">
+            <!--User Profile-->
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="img/account.png">
+                        <h3>User</h3>
+                    </div>
+                    <hr>
+                    <a href="edit_profile.html" class="sub-menu-link">
+                        <img src="img/user.png">
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>
+                    <a href="setting_privacy.html" class="sub-menu-link">
+                        <img src="img/settings.png">
+                        <p>Setting & Privacy</p>
+                        <span>></span>
+                    </a>
+                    <a href="login.html" class="sub-menu-link">
+                        <img src="img/exit.png">
+                        <p>Logout</p>
+                    </a>
+                </div>
+            </div>
+               
+           </nav><br><br>
+  
+    </header><br><br><br><br><br>
+    <div class="cart-box">
+      <div class="cart-icon">
+        <i class="fas fa-cart-arrow-down fa-2x"></i>
+      </div>
+      <div class="whole-cart-window hide">
+        <h2>Shopping Bag</h2>
+        <div class="cart-wrapper">
+        </div>
+        <div class="subtotal">Subtotal: $0.00</div>
+        <div class="checkout">Checkout</div>
+      </div>
+    </div>
+    <section class="shop-section">
+      <div class="card-wrapper">
+        <div data-id="1" class="card-item">
+          <img src="img/pn1.jpg" />
+          <div class="details">
+            <h3>KAHAPATA IRA PALUWAK</h3>
+            <p>
+              <span class="price">Price: $23.44</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+        <!-- item 2 -->
+        <div data-id="2" class="card-item">
+            <img src="img/pn2.jpg" />
+          <div class="details">
+            <h3>ARTHIKA GATHAKAYAKUGE PAPOCHCHARANAYA</h3>
+            <p>
+              <span class="price">Price: $23.44</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- product 3 -->
+        <div data-id="3" class="card-item">
+            <img src="img/pn3.jpg" />
+          <div class="details">
+            <h3>EJAWE SAMIWARAYAGE MARANAYA</h3>
+            <p>
+              <span class="price">Price: $23.44</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- product 4 -->
+        <div data-id="4" class="card-item">
+            <img src="img/pn4.jpg" />
+          <div class="details">
+            <h3>VIPRAVASA</h3>
+            <p>
+              <span class="price">Price: $23.44</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+        <!-- product 5 -->
+        <div data-id="5" class="card-item">
+            <img src="img/c1.jpg" />
+          <div class="details">
+            <h3>NOODY</h3>
+            <p>
+              
+              <span class="price">Price: $23.44</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- product 6 -->
+        <div data-id="6" class="card-item">
+            <img src="img/c2.jpg" />
+          <div class="details">
+            <h3>PUB QUIZ</h3>
+            <p>
+              
+              <span class="price">Price: $23.44</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- product 7 -->
+        <div data-id="7" class="card-item">
+            <img src="img/c3.jpg" />
+          <div class="details">
+            <h3>MAY RAINBOW MERMADE</h3>
+            <p>
+              
+
+              <span class="price">Price: $23.44</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- product 8 -->
+        <div data-id="8" class="card-item">
+            <img src="img/c4.jpg" />
+          <div class="details">
+            <h3>PATTERNS</h3>
+            <p>
+             
+
+              <span class="price">Price: $23.44</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- product 9 -->
+
+        <div data-id="9" class="card-item">
+            <img src="img/e1.jpg" />
+          <div class="details">
+            <h3>PAST PAPERS SINHALA GRADE 7</h3>
+            <p>
+              
+
+              <span class="price">Price: $23.44</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+<!--footer-->
+<footer>
+    <div class="container">
+        <div class="row">
+              <div class="col">
+                  <img src="img/logo2.png" alt="" class="logo">
+                  
+                  <div class="social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                  </div>
+            </div>
+              <div class="col">
+                  <h3>Contact</h3>
+                  <div class="contact-details">
+                     <i class="fa fa-envelope"></i>
+                     <p>libertvbookstore@gmail.com</p>
+                  </div><br><br>
+                  <div class="contact-details">
+                     <i class="fa fa-phone"></i>
+                     <p>+94110042500</p>
+                  </div><br><br>
+                  <div class="contact-details">
+                    <i class="fa fa-globe"></i>
+                    <p>www.Libertvbookstore.com</p>
+                 </div>
+              </div>
+              <div class="col">
+                <h3>Links</h3>
+                <div class="links">
+                   <a href="#">Home</a></li>
+                   <a href="categories.html">Categories</a>
+                   <a href="#">Publication</a>
+                   <a href="register.html">Register</a>
+                   <a href="login.html">Login</a>
+                   <a href="contact_us.html">Contact Us</a>
+                            </div>
+                </div>
+             </div>
+        </div>
+    </div>
+    <hr color="black" width="100%"><br>
+    <p class="copyright">Copyright 02023 - Liberty Book Store - All right
+        Reserved</p>
+ </footer>
+  <!--js link-->        
+  <script src="js/myscript.js"></script>    <!--extranal daganna oneee...-->
+  <script>
+  let subMenu = document.getElementById("subMenu");
+          function toggleMenu(){
+              subMenu.classList.toggle("open-menu");
+          }  
+  </script>
+    <script src="script.js"></script>
+  </body>
+</html>
