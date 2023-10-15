@@ -12,24 +12,52 @@
 </html>
 <body>
     <header>
-        <div class="img2">
-        <ul>
-            <li id="img2"><img src="img/logo2.png"></li>
-        </ul>
-        </div><br><br><br>
-        <ul>
-            <div class="hero">
+        <div class="hero">
             <nav>
-            <li><img src="img/logo.png"></li>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="publication.html">Publication</a></li>
-            <li><a href="register.html">Register</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li id="contact"><a href="contact_us.html">Contact Us</a></li>
-        </ul>
-    </nav>
-</div>
-    </header><br>
+               <!--logo_txt-->
+               <a href="home.html"><img class="logo" src="img/logo2.png" alt="logo"></a>
+           <ul class="nav_links">
+               <li><a href="home.html">Home</a></li>
+               <li><a href="publication.html">Publication</a></li>
+               <li><a href="register.html">Ragister</a></li>
+               <li><a href="contact_us.html">Contact Us</a></li>
+               <li><a href="about_us.html">About us</a></li>
+           </ul>
+           <!--user image-->
+               <img class="user_pic" src="img/pp.jpg" onclick="toggleMenu()">
+               <!--User Profile-->
+               <div class="sub-menu-wrap" id="subMenu">
+                   <div class="sub-menu">
+                       <div class="user-info">
+                           <img src="img/account.png">
+                           <h3>User</h3>
+                       </div>
+                       <hr>
+                       <a href="edit_profile.html" class="sub-menu-link">
+                           <img src="img/user.png">
+                           <p>Edit Profile</p>
+                           <span>></span>
+                       </a>
+                       <a href="setting_privacy.html" class="sub-menu-link">
+                           <img src="img/settings.png">
+                           <p>Setting & Privacy</p>
+                           <span>></span>
+                       </a>
+                       <a href="https://www.who.int/campaigns/world-blood-donor-day/2018/who-can-give-blood" target="_blank" class="sub-menu-link">
+                           <img src="img/user profile icons/help.png">
+                           <p></p>
+                           <span>></span>
+                       </a>
+                       <a href="login.html" class="sub-menu-link">
+                           <img src="img/user profile icons/logout.png">
+                           <p>Logout</p>
+                       </a>
+                   </div>
+               </div>
+               <!--Login Button-->
+               <a href="login.html"><button class="login_b">LOGIN</button> </a>
+           </nav><br><br>
+    </header>
         <section class="section">
             <div class="slider">
                 <div class="slide">
@@ -76,7 +104,7 @@
                     counter=1;
                 }
             },3000);
-        </script><br>
+        </script>
          <div class = "products">
             <div class = "container">
                 <div class = "product-items">
@@ -184,5 +212,13 @@
         <p class="copyright">Copyright 02023 - Liberty Book Store - All right
             Reserved</p>
      </footer>
+      <!--js link-->        
+      <script src="js/myscript.js"></script>    <!--extranal daganna oneee...-->
+      <script>
+      let subMenu = document.getElementById("subMenu");
+              function toggleMenu(){
+                  subMenu.classList.toggle("open-menu");
+              }  
+      </script>
 </body>
 </html>
